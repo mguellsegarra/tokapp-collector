@@ -1,0 +1,25 @@
+# Downloaded/proprietary binaries and generated reverse-engineering output.
+/artifacts/
+/analysis/
+
+# Local credentials and captured traffic must never be committed.
+.env
+.env.*
+!.env.example
+/config/*.local.json
+.DS_Store
+*.har
+*.pcap
+*.pcapng
+*.sqlite
+*.sqlite-*
+*.db
+
+# Runtime and Python build output.
+/data/
+/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/

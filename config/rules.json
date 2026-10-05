@@ -1,0 +1,24 @@
+{
+  "notify_when_uncertain": true,
+  "high_keywords": [
+    "vaga",
+    "aturada",
+    "serveis mínims",
+    "cancel·lat",
+    "cancel·lada",
+    "suspès",
+    "suspesa",
+    "canvi d'horari",
+    "autorització",
+    "data límit",
+    "pagament",
+    "absència",
+    "emergència"
+  ],
+  "spam_keywords": [
+    "promoció comercial",
+    "publicitat"
+  ],
+  "child_aliases": {},
+  "group_recipients": {}
+}

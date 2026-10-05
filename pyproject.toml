@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tokapp-collector"
+version = "0.1.0"
+description = "Collector local de missatges de TokApp amb resum, classificació i Telegram"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+tokapp-collector = "tokapp_collector.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,22 @@
+[Unit]
+Description=TokApp collector
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/apps/tokapp-collector
+EnvironmentFile=%h/.config/tokapp-collector/env
+ExecStart=%h/apps/tokapp-collector/.venv/bin/tokapp-collector run
+Restart=on-failure
+RestartSec=15
+TimeoutStopSec=20
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/.local/share/tokapp-collector
+
+[Install]
+WantedBy=default.target
