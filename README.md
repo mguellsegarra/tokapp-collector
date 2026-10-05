@@ -246,4 +246,4 @@ el paquet que distribuiràs. `.gitignore` no elimina dades ja versionades.
 
 ## Llicència
 
-Encara no s'ha afegit una llicència de distribució al repositori.
+MIT
